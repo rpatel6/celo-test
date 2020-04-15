@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD54E3032447CD720062B80C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E3022447CD720062B80C /* AppDelegate.swift */; };
+		CD54E3052447CD720062B80C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E3042447CD720062B80C /* SceneDelegate.swift */; };
+		CD54E3072447CD720062B80C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E3062447CD720062B80C /* ViewController.swift */; };
+		CD54E30A2447CD720062B80C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54E3082447CD720062B80C /* Main.storyboard */; };
+		CD54E30D2447CD720062B80C /* Celo_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD54E30B2447CD720062B80C /* Celo_test.xcdatamodeld */; };
+		CD54E30F2447CD730062B80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD54E30E2447CD730062B80C /* Assets.xcassets */; };
+		CD54E3122447CD730062B80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54E3102447CD730062B80C /* LaunchScreen.storyboard */; };
+		CD54E31D2447CD730062B80C /* Celo_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E31C2447CD730062B80C /* Celo_testTests.swift */; };
+		CD54E3282447CD730062B80C /* Celo_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E3272447CD730062B80C /* Celo_testUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD54E3192447CD730062B80C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD54E2F72447CD720062B80C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD54E2FE2447CD720062B80C;
+			remoteInfo = "Celo test";
+		};
+		CD54E3242447CD730062B80C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD54E2F72447CD720062B80C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD54E2FE2447CD720062B80C;
+			remoteInfo = "Celo test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD54E2FF2447CD720062B80C /* Celo test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Celo test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD54E3022447CD720062B80C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD54E3042447CD720062B80C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD54E3062447CD720062B80C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD54E3092447CD720062B80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD54E30C2447CD720062B80C /* Celo_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Celo_test.xcdatamodel; sourceTree = "<group>"; };
+		CD54E30E2447CD730062B80C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD54E3112447CD730062B80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD54E3132447CD730062B80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD54E3182447CD730062B80C /* Celo testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Celo testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD54E31C2447CD730062B80C /* Celo_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celo_testTests.swift; sourceTree = "<group>"; };
+		CD54E31E2447CD730062B80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD54E3232447CD730062B80C /* Celo testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Celo testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD54E3272447CD730062B80C /* Celo_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celo_testUITests.swift; sourceTree = "<group>"; };
+		CD54E3292447CD730062B80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD54E2FC2447CD720062B80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD54E3152447CD730062B80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD54E3202447CD730062B80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD54E2F62447CD720062B80C = {
+			isa = PBXGroup;
+			children = (
+				CD54E3012447CD720062B80C /* Celo test */,
+				CD54E31B2447CD730062B80C /* Celo testTests */,
+				CD54E3262447CD730062B80C /* Celo testUITests */,
+				CD54E3002447CD720062B80C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD54E3002447CD720062B80C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD54E2FF2447CD720062B80C /* Celo test.app */,
+				CD54E3182447CD730062B80C /* Celo testTests.xctest */,
+				CD54E3232447CD730062B80C /* Celo testUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD54E3012447CD720062B80C /* Celo test */ = {
+			isa = PBXGroup;
+			children = (
+				CD54E3022447CD720062B80C /* AppDelegate.swift */,
+				CD54E3042447CD720062B80C /* SceneDelegate.swift */,
+				CD54E3062447CD720062B80C /* ViewController.swift */,
+				CD54E3082447CD720062B80C /* Main.storyboard */,
+				CD54E30E2447CD730062B80C /* Assets.xcassets */,
+				CD54E3102447CD730062B80C /* LaunchScreen.storyboard */,
+				CD54E3132447CD730062B80C /* Info.plist */,
+				CD54E30B2447CD720062B80C /* Celo_test.xcdatamodeld */,
+			);
+			path = "Celo test";
+			sourceTree = "<group>";
+		};
+		CD54E31B2447CD730062B80C /* Celo testTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD54E31C2447CD730062B80C /* Celo_testTests.swift */,
+				CD54E31E2447CD730062B80C /* Info.plist */,
+			);
+			path = "Celo testTests";
+			sourceTree = "<group>";
+		};
+		CD54E3262447CD730062B80C /* Celo testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD54E3272447CD730062B80C /* Celo_testUITests.swift */,
+				CD54E3292447CD730062B80C /* Info.plist */,
+			);
+			path = "Celo testUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD54E2FE2447CD720062B80C /* Celo test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD54E32C2447CD730062B80C /* Build configuration list for PBXNativeTarget "Celo test" */;
+			buildPhases = (
+				CD54E2FB2447CD720062B80C /* Sources */,
+				CD54E2FC2447CD720062B80C /* Frameworks */,
+				CD54E2FD2447CD720062B80C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Celo test";
+			productName = "Celo test";
+			productReference = CD54E2FF2447CD720062B80C /* Celo test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD54E3172447CD730062B80C /* Celo testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD54E32F2447CD730062B80C /* Build configuration list for PBXNativeTarget "Celo testTests" */;
+			buildPhases = (
+				CD54E3142447CD730062B80C /* Sources */,
+				CD54E3152447CD730062B80C /* Frameworks */,
+				CD54E3162447CD730062B80C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD54E31A2447CD730062B80C /* PBXTargetDependency */,
+			);
+			name = "Celo testTests";
+			productName = "Celo testTests";
+			productReference = CD54E3182447CD730062B80C /* Celo testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD54E3222447CD730062B80C /* Celo testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD54E3322447CD730062B80C /* Build configuration list for PBXNativeTarget "Celo testUITests" */;
+			buildPhases = (
+				CD54E31F2447CD730062B80C /* Sources */,
+				CD54E3202447CD730062B80C /* Frameworks */,
+				CD54E3212447CD730062B80C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD54E3252447CD730062B80C /* PBXTargetDependency */,
+			);
+			name = "Celo testUITests";
+			productName = "Celo testUITests";
+			productReference = CD54E3232447CD730062B80C /* Celo testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD54E2F72447CD720062B80C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Raj Patel";
+				TargetAttributes = {
+					CD54E2FE2447CD720062B80C = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					CD54E3172447CD730062B80C = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CD54E2FE2447CD720062B80C;
+					};
+					CD54E3222447CD730062B80C = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CD54E2FE2447CD720062B80C;
+					};
+				};
+			};
+			buildConfigurationList = CD54E2FA2447CD720062B80C /* Build configuration list for PBXProject "Celo test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD54E2F62447CD720062B80C;
+			productRefGroup = CD54E3002447CD720062B80C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD54E2FE2447CD720062B80C /* Celo test */,
+				CD54E3172447CD730062B80C /* Celo testTests */,
+				CD54E3222447CD730062B80C /* Celo testUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD54E2FD2447CD720062B80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD54E3122447CD730062B80C /* LaunchScreen.storyboard in Resources */,
+				CD54E30F2447CD730062B80C /* Assets.xcassets in Resources */,
+				CD54E30A2447CD720062B80C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD54E3162447CD730062B80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD54E3212447CD730062B80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD54E2FB2447CD720062B80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD54E30D2447CD720062B80C /* Celo_test.xcdatamodeld in Sources */,
+				CD54E3072447CD720062B80C /* ViewController.swift in Sources */,
+				CD54E3032447CD720062B80C /* AppDelegate.swift in Sources */,
+				CD54E3052447CD720062B80C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD54E3142447CD730062B80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD54E31D2447CD730062B80C /* Celo_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD54E31F2447CD730062B80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD54E3282447CD730062B80C /* Celo_testUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD54E31A2447CD730062B80C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD54E2FE2447CD720062B80C /* Celo test */;
+			targetProxy = CD54E3192447CD730062B80C /* PBXContainerItemProxy */;
+		};
+		CD54E3252447CD730062B80C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD54E2FE2447CD720062B80C /* Celo test */;
+			targetProxy = CD54E3242447CD730062B80C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD54E3082447CD720062B80C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD54E3092447CD720062B80C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD54E3102447CD730062B80C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD54E3112447CD730062B80C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD54E32A2447CD730062B80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD54E32B2447CD730062B80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD54E32D2447CD730062B80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQHL2GT9S8;
+				INFOPLIST_FILE = "Celo test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.securecodes.Celo-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD54E32E2447CD730062B80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQHL2GT9S8;
+				INFOPLIST_FILE = "Celo test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.securecodes.Celo-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD54E3302447CD730062B80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQHL2GT9S8;
+				INFOPLIST_FILE = "Celo testTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.securecodes.Celo-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Celo test.app/Celo test";
+			};
+			name = Debug;
+		};
+		CD54E3312447CD730062B80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQHL2GT9S8;
+				INFOPLIST_FILE = "Celo testTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.securecodes.Celo-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Celo test.app/Celo test";
+			};
+			name = Release;
+		};
+		CD54E3332447CD730062B80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQHL2GT9S8;
+				INFOPLIST_FILE = "Celo testUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.securecodes.Celo-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Celo test";
+			};
+			name = Debug;
+		};
+		CD54E3342447CD730062B80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQHL2GT9S8;
+				INFOPLIST_FILE = "Celo testUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.securecodes.Celo-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Celo test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD54E2FA2447CD720062B80C /* Build configuration list for PBXProject "Celo test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD54E32A2447CD730062B80C /* Debug */,
+				CD54E32B2447CD730062B80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD54E32C2447CD730062B80C /* Build configuration list for PBXNativeTarget "Celo test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD54E32D2447CD730062B80C /* Debug */,
+				CD54E32E2447CD730062B80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD54E32F2447CD730062B80C /* Build configuration list for PBXNativeTarget "Celo testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD54E3302447CD730062B80C /* Debug */,
+				CD54E3312447CD730062B80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD54E3322447CD730062B80C /* Build configuration list for PBXNativeTarget "Celo testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD54E3332447CD730062B80C /* Debug */,
+				CD54E3342447CD730062B80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD54E30B2447CD720062B80C /* Celo_test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD54E30C2447CD720062B80C /* Celo_test.xcdatamodel */,
+			);
+			currentVersion = CD54E30C2447CD720062B80C /* Celo_test.xcdatamodel */;
+			path = Celo_test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD54E2F72447CD720062B80C /* Project object */;
+}
