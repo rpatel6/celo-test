@@ -9,13 +9,23 @@
 /* Begin PBXBuildFile section */
 		CD54E3032447CD720062B80C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E3022447CD720062B80C /* AppDelegate.swift */; };
 		CD54E3052447CD720062B80C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E3042447CD720062B80C /* SceneDelegate.swift */; };
-		CD54E3072447CD720062B80C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E3062447CD720062B80C /* ViewController.swift */; };
 		CD54E30A2447CD720062B80C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54E3082447CD720062B80C /* Main.storyboard */; };
 		CD54E30D2447CD720062B80C /* Celo_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD54E30B2447CD720062B80C /* Celo_test.xcdatamodeld */; };
 		CD54E30F2447CD730062B80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD54E30E2447CD730062B80C /* Assets.xcassets */; };
 		CD54E3122447CD730062B80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD54E3102447CD730062B80C /* LaunchScreen.storyboard */; };
-		CD54E31D2447CD730062B80C /* Celo_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E31C2447CD730062B80C /* Celo_testTests.swift */; };
 		CD54E3282447CD730062B80C /* Celo_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E3272447CD730062B80C /* Celo_testUITests.swift */; };
+		CD54E3392447EE500062B80C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E3382447EE500062B80C /* Service.swift */; };
+		CD54E33D244812190062B80C /* UsersResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E33C244812190062B80C /* UsersResult.swift */; };
+		CD54E34424484DA90062B80C /* DataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E34324484DA90062B80C /* DataCoordinator.swift */; };
+		CD54E3462448ADDA0062B80C /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E3452448ADDA0062B80C /* PeopleViewController.swift */; };
+		CD54E3492448AF4A0062B80C /* PeopleCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E3472448AF4A0062B80C /* PeopleCellTableViewCell.swift */; };
+		CD54E34A2448AF4A0062B80C /* PeopleCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD54E3482448AF4A0062B80C /* PeopleCellTableViewCell.xib */; };
+		CD54E34D2449AA5C0062B80C /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E34B2449AA5C0062B80C /* PersonViewController.swift */; };
+		CD54E34E2449AA5C0062B80C /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD54E34C2449AA5C0062B80C /* PersonViewController.xib */; };
+		CD54E351244A6E8A0062B80C /* Celo+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E350244A6E8A0062B80C /* Celo+Date.swift */; };
+		CD81B545244BA83800B184CB /* DataCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81B544244BA83800B184CB /* DataCoordinatorTests.swift */; };
+		CD81B547244BB45D00B184CB /* DateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81B546244BB45D00B184CB /* DateTest.swift */; };
+		CDAFC6ED244AADB000C140DA /* PeopleSearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAFC6EC244AADB000C140DA /* PeopleSearchResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,18 +49,28 @@
 		CD54E2FF2447CD720062B80C /* Celo test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Celo test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD54E3022447CD720062B80C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD54E3042447CD720062B80C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD54E3062447CD720062B80C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD54E3092447CD720062B80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD54E30C2447CD720062B80C /* Celo_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Celo_test.xcdatamodel; sourceTree = "<group>"; };
 		CD54E30E2447CD730062B80C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD54E3112447CD730062B80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD54E3132447CD730062B80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD54E3182447CD730062B80C /* Celo testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Celo testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD54E31C2447CD730062B80C /* Celo_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celo_testTests.swift; sourceTree = "<group>"; };
 		CD54E31E2447CD730062B80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD54E3232447CD730062B80C /* Celo testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Celo testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD54E3272447CD730062B80C /* Celo_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celo_testUITests.swift; sourceTree = "<group>"; };
 		CD54E3292447CD730062B80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD54E3382447EE500062B80C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		CD54E33C244812190062B80C /* UsersResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResult.swift; sourceTree = "<group>"; };
+		CD54E34324484DA90062B80C /* DataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCoordinator.swift; sourceTree = "<group>"; };
+		CD54E3452448ADDA0062B80C /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		CD54E3472448AF4A0062B80C /* PeopleCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCellTableViewCell.swift; sourceTree = "<group>"; };
+		CD54E3482448AF4A0062B80C /* PeopleCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleCellTableViewCell.xib; sourceTree = "<group>"; };
+		CD54E34B2449AA5C0062B80C /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		CD54E34C2449AA5C0062B80C /* PersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
+		CD54E350244A6E8A0062B80C /* Celo+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Celo+Date.swift"; sourceTree = "<group>"; };
+		CD81B544244BA83800B184CB /* DataCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCoordinatorTests.swift; sourceTree = "<group>"; };
+		CD81B546244BB45D00B184CB /* DateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTest.swift; sourceTree = "<group>"; };
+		CDAFC6EC244AADB000C140DA /* PeopleSearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleSearchResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +101,10 @@
 		CD54E2F62447CD720062B80C = {
 			isa = PBXGroup;
 			children = (
+				CD54E34F244A6E7A0062B80C /* Util */,
+				CD54E34224484D930062B80C /* Coordinator */,
+				CD54E33B244812000062B80C /* Model */,
+				CD54E3372447EE3F0062B80C /* Service */,
 				CD54E3012447CD720062B80C /* Celo test */,
 				CD54E31B2447CD730062B80C /* Celo testTests */,
 				CD54E3262447CD730062B80C /* Celo testUITests */,
@@ -101,14 +125,18 @@
 		CD54E3012447CD720062B80C /* Celo test */ = {
 			isa = PBXGroup;
 			children = (
+				CD54E3452448ADDA0062B80C /* PeopleViewController.swift */,
 				CD54E3022447CD720062B80C /* AppDelegate.swift */,
 				CD54E3042447CD720062B80C /* SceneDelegate.swift */,
-				CD54E3062447CD720062B80C /* ViewController.swift */,
 				CD54E3082447CD720062B80C /* Main.storyboard */,
 				CD54E30E2447CD730062B80C /* Assets.xcassets */,
 				CD54E3102447CD730062B80C /* LaunchScreen.storyboard */,
 				CD54E3132447CD730062B80C /* Info.plist */,
-				CD54E30B2447CD720062B80C /* Celo_test.xcdatamodeld */,
+				CD54E3472448AF4A0062B80C /* PeopleCellTableViewCell.swift */,
+				CD54E3482448AF4A0062B80C /* PeopleCellTableViewCell.xib */,
+				CD54E34B2449AA5C0062B80C /* PersonViewController.swift */,
+				CD54E34C2449AA5C0062B80C /* PersonViewController.xib */,
+				CDAFC6EC244AADB000C140DA /* PeopleSearchResultsViewController.swift */,
 			);
 			path = "Celo test";
 			sourceTree = "<group>";
@@ -116,8 +144,9 @@
 		CD54E31B2447CD730062B80C /* Celo testTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD54E31C2447CD730062B80C /* Celo_testTests.swift */,
 				CD54E31E2447CD730062B80C /* Info.plist */,
+				CD81B544244BA83800B184CB /* DataCoordinatorTests.swift */,
+				CD81B546244BB45D00B184CB /* DateTest.swift */,
 			);
 			path = "Celo testTests";
 			sourceTree = "<group>";
@@ -129,6 +158,39 @@
 				CD54E3292447CD730062B80C /* Info.plist */,
 			);
 			path = "Celo testUITests";
+			sourceTree = "<group>";
+		};
+		CD54E3372447EE3F0062B80C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CD54E3382447EE500062B80C /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CD54E33B244812000062B80C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD54E33C244812190062B80C /* UsersResult.swift */,
+				CD54E30B2447CD720062B80C /* Celo_test.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD54E34224484D930062B80C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CD54E34324484DA90062B80C /* DataCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CD54E34F244A6E7A0062B80C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CD54E350244A6E8A0062B80C /* Celo+Date.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +297,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD54E34A2448AF4A0062B80C /* PeopleCellTableViewCell.xib in Resources */,
+				CD54E34E2449AA5C0062B80C /* PersonViewController.xib in Resources */,
 				CD54E3122447CD730062B80C /* LaunchScreen.storyboard in Resources */,
 				CD54E30F2447CD730062B80C /* Assets.xcassets in Resources */,
 				CD54E30A2447CD720062B80C /* Main.storyboard in Resources */,
@@ -262,10 +326,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD54E3492448AF4A0062B80C /* PeopleCellTableViewCell.swift in Sources */,
+				CD54E33D244812190062B80C /* UsersResult.swift in Sources */,
+				CD54E3462448ADDA0062B80C /* PeopleViewController.swift in Sources */,
+				CDAFC6ED244AADB000C140DA /* PeopleSearchResultsViewController.swift in Sources */,
 				CD54E30D2447CD720062B80C /* Celo_test.xcdatamodeld in Sources */,
-				CD54E3072447CD720062B80C /* ViewController.swift in Sources */,
 				CD54E3032447CD720062B80C /* AppDelegate.swift in Sources */,
+				CD54E351244A6E8A0062B80C /* Celo+Date.swift in Sources */,
+				CD54E34424484DA90062B80C /* DataCoordinator.swift in Sources */,
 				CD54E3052447CD720062B80C /* SceneDelegate.swift in Sources */,
+				CD54E34D2449AA5C0062B80C /* PersonViewController.swift in Sources */,
+				CD54E3392447EE500062B80C /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +344,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD54E31D2447CD730062B80C /* Celo_testTests.swift in Sources */,
+				CD81B547244BB45D00B184CB /* DateTest.swift in Sources */,
+				CD81B545244BA83800B184CB /* DataCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +513,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MQHL2GT9S8;
 				INFOPLIST_FILE = "Celo test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MQHL2GT9S8;
 				INFOPLIST_FILE = "Celo test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
