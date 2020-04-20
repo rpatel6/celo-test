@@ -31,6 +31,20 @@ class PeopleViewController: UITableViewController {
         return controller
     }()
     
+    //Responsible for pull down to refresh the data
+    lazy var refresher: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(downloadData), for: .valueChanged)
+        return refreshControl
+    }()
+    
+    lazy var dataCoordinator: DataCoordinator? = {
+        guard let container = appDelegate?.persistentContainer else { return nil }
+        let dataCoord = DataCoordinator(container: container)
+        dataCoord.delegate = self
+        return dataCoord
+    }()
+    
     private let imageCache = NSCache<NSString, UIImage>()
 
     override func viewDidLoad() {
@@ -38,8 +52,9 @@ class PeopleViewController: UITableViewController {
         self.title = "People"
         tableView.register(UINib(nibName: String(describing: PeopleCellTableViewCell.self), bundle: nil),
                            forCellReuseIdentifier: String(describing: PeopleCellTableViewCell.self))
+        tableView.refreshControl = refresher
         setupSearchController(with: appDelegate?.persistentContainer)
-        setupDataCoordinator(with: appDelegate?.persistentContainer)
+        downloadData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -88,11 +103,11 @@ class PeopleViewController: UITableViewController {
         }
     }
     
-    private func setupDataCoordinator(with container: NSPersistentContainer?) {
-        guard let container = container else { return }
-        let dataCoord = DataCoordinator(container: container)
-        dataCoord.delegate = self
-        dataCoord.getPeople { error  in
+    @objc private func downloadData() {
+        dataCoordinator?.getPeople {[weak self] error  in
+            DispatchQueue.main.async {
+                self?.refreshControl?.endRefreshing()
+            }
             if error != nil {
                 print(error.debugDescription)
             }
@@ -113,7 +128,7 @@ class PeopleViewController: UITableViewController {
 
 extension PeopleViewController: DataCoordinatorDelegate {
     func newDataSaved() {
-        //This delegate is triggerred by the coordinator when theres new data available.
+        //This delegate is triggered by the coordinator when theres new data available.
         DispatchQueue.main.async {
             do {
                 self.tableView.isUserInteractionEnabled = false
