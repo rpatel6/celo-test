@@ -62,16 +62,16 @@ class DataCoordinator {
                 let _: [Person]? = users?.compactMap {
                     let person = Person(entity: entity, insertInto: context)
                     person.cell = $0.cell
-                    person.streetName = $0.location.street.name
-                    person.streetNum = Int16($0.location.street.number)
-                    person.city = $0.location.city
-                    person.country = $0.location.country
-                    person.name = "\($0.name.first) \($0.name.last)"
-                    person.title = $0.name.title
-                    person.thumbnail = URL(string: $0.picture.thumbnail)
-                    person.largePic =  URL(string: $0.picture.large)
+                    person.streetName = $0.location?.street?.name
+                    person.streetNum = Int16($0.location?.street?.number ?? 0)
+                    person.city = $0.location?.city
+                    person.country = $0.location?.country
+                    person.name = "\($0.name?.first ?? "") \($0.name?.last ?? "")"
+                    person.title = $0.name?.title
+                    person.thumbnail = URL(string: $0.picture?.thumbnail ?? "")
+                    person.largePic =  URL(string: $0.picture?.large ?? "")
                     person.gender = $0.gender
-                    person.dob = $0.dob.date
+                    person.dob = $0.dob?.date
                     person.email = $0.email
                     return person
                 }

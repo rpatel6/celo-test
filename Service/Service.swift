@@ -20,12 +20,15 @@ struct Service {
                 (response as! HTTPURLResponse).statusCode == 200,
                     let data = data {
                     do {
-                        let result = try? JSONDecoder().decode(UsersResult.self, from: data)
-                        completion(result?.results, error)
+                        let result = try JSONDecoder().decode(UsersResult.self, from: data)
+                        completion(result.results, error)
+                    } catch {
+                        completion(nil, error)
                     }
                 } else {
                     print(error.debugDescription)
                     print(response.debugDescription)
+                    completion(nil, error)
                 }
             })
             task.resume()

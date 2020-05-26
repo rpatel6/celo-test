@@ -39,6 +39,11 @@ class PeopleCellTableViewCell: UITableViewCell {
         }
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        personImage = #imageLiteral(resourceName: "placeholder.png")
+    }
+    
     @IBOutlet weak var _personImage: UIImageView!
     @IBOutlet weak var _personName: UILabel!
     @IBOutlet weak var _personGender: UILabel!
